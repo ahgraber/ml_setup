@@ -37,7 +37,7 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
      6. Click the icon in the top-left corner of the info panel and hit ctrl-V to paste  
 
 
-4. *BEFORE LOADING OTHER PACKAGES*, create a virtual environment for ML projects.  
+4. **BEFORE LOADING OTHER PACKAGES**, create a virtual environment for ML projects.  
 See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) for more
    1. Create a folder for your ml virtual environment (or, if you plan to do this on a per-project basis, create your project folder)
    2. In terminal, create your virtual environment
@@ -56,18 +56,31 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    ```
    deactivate
    ```
-5. Install (applicable) packages 
+
 ```
 # Note: I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
 
 # Activate virtual environment
 source /path/to/virtualenv_name/bin/activate
-
-# create kernel for jupyter (ref: https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+```
+5. Prepare kernel for ipynotebooks (jupyter or spyder) . 
+(ref: https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+```
 pip3 install ipykernel
 ipython kernel install --user --name=VIRTUALENV_NAME
-# Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
+```
+**Jupyter**: Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
+![jupyter-dropdown](images/jupyter-dropdown.png)
+**Spyder**: Open spyder, open preferences, change the interpreter manually to the path of your virtual environment
+![spyder-venv](images/spyder-venv.png)
+```
+# /path/to/virtualenv
+/Users/USER_NAME/Python/VIRTUALENV_NAME/bin/python
+```
+Then right-click on the console and restart the kernel
 
+6. Install (applicable) packages 
+```
 # standard packages
 pip3 install numpy          # arrays/matrices
 pip3 install pandas         # data frames
@@ -101,3 +114,4 @@ pip3 install spaCy          # fast nlp
 pip3 install gensim         # topic modeling
 ```
 
+6. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7)
