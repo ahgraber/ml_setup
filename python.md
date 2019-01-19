@@ -37,7 +37,7 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
      6. Click the icon in the top-left corner of the info panel and hit ctrl-V to paste  
 
 
-4. BEFORE DOING LOADING OTHER PACKAGES, create a virtual environment for ML projects.  
+4. *BEFORE LOADING OTHER PACKAGES*, create a virtual environment for ML projects.  
 See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) for more
    1. Create a folder for your ml virtual environment (or, if you plan to do this on a per-project basis, create your project folder)
    2. In terminal, create your virtual environment
