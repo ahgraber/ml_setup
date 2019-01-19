@@ -43,29 +43,30 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    2. In terminal, create your virtual environment
    ```
    # cd /path/to/directory
-   # python3 -m venv virtualenv_name
+   # python3 -m venv VIRTUALENV_NAME
    cd ~/Python
    python3 -m venv ml
    ```
    3. Activate your virtual environment
    ```
    # source /path/to/virtualenv_name/bin/activate
-   source /~/Python/ml/bin/activate
+   source ~/Python/ml/bin/activate
    ```
-5. Install packages 
+   3. To exit the virtual environment
+   ```
+   deactivate
+   ```
+5. Install (applicable) packages 
 ```
+# Note: I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
+
 # Activate virtual environment
 source /path/to/virtualenv_name/bin/activate
 
-# I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
-# run the applicable commands
-
-# environments
-pip3 install virtualenv     # virtual environments
-pip3 install Cython         # good to have
-pip3 install jupyter        # jupyter notebooks
-pip3 install PyQt5          # for spyder
-pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs.spyder-ide.org/installation.html#installing-with-pip-experts-only
+# create kernel for jupyter (ref: https://anbasile.github.io/programming/2017/06/25/jupyter-venv/)
+pip3 install ipykernel
+ipython kernel install --user --name=VIRTUALENV_NAME
+# Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
 
 # standard packages
 pip3 install numpy          # arrays/matrices
