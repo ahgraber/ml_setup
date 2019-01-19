@@ -13,4 +13,4 @@ last updated Jan 2019
 2. [Python, supporting libraries, jupyter notebook / spyder](https://github.com/ahgraber/ml_setup/blob/master/python.md)
 3. [R, supporting packages, RStudio](https://github.com/ahgraber/ml_setup/blob/master/r.md)
 4. Optional - [Octave/Matlab](https://github.com/ahgraber/ml_setup/blob/master/octave.md)
-5. [Other
+5. [Other](https://github.com/ahgraber/ml_setup/master/other.md)
