@@ -9,3 +9,10 @@ xcode-select --install.
 ```
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+   * Recommended homebrew casks:
+   ```
+   brew install wget
+   brew install gcc
+   brew install cairo
+   brew install ghostscript  
+   ```
