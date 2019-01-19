@@ -14,4 +14,4 @@ last updated Jan 2019
 3. [R, supporting packages, RStudio](https://github.com/ahgraber/ml_setup/blob/master/r.md)
 4. Optional - [.bash_profile for mac](https://github.com/ahgraber/ml_setup/blob/master/bash_profile.md)
 5. Optional - [Octave/Matlab](https://github.com/ahgraber/ml_setup/blob/master/octave.md)
-6. Optional - [Other](https://github.com/ahgraber/ml_setup/master/other.md)
+6. Optional - [Other](https://github.com/ahgraber/ml_setup/blob/master/other.md)
