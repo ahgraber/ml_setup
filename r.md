@@ -2,9 +2,12 @@
 updated 19 Jan 2019
 
 1. [Download R](https://cran.rstudio.com/banner.shtml) and install (current R version R-3.5.2)
-2. [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download) and install (current RStudio version 1.1.463)
-3. Optional: if you have installed an optimized linear algebra implementation, ensure R knows about it
-4. Install Packages in RStudio:
+2. If mac, [Download xQuartz](https://www.xquartz.org/) and install
+3. [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download) and install (current RStudio version 1.1.463)
+4. Optional: if you have installed an optimized linear algebra implementation, ensure R knows about it
+```
+```
+5. Install Packages in RStudio:
 ```
 # see also: https://awesome-r.com/
 
@@ -54,4 +57,7 @@ install.packages('keras')       # frontend for keras
 install.packages('devtools')    # tools for packaging
 install.packages('roxygen2')    # function documentation
 install.packages('packman')     # checks for package installation/load
+
+# extending R
+install.packages('rJava')       # java + R
 ```
