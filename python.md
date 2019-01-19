@@ -50,9 +50,9 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    3. Activate your virtual environment
    ```
    # source /path/to/virtualenv_name/bin/activate
-   source ~/Python/ml/bin/activate
+   source ml/bin/activate
    ```
-   3. To exit the virtual environment
+   4. To exit the virtual environment
    ```
    deactivate
    ```
