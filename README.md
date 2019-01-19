@@ -9,7 +9,8 @@ last updated Jan 2019
 * Storage: 256 GB+ NVMe SSD; 2 TB HDD
 
 ### Documented Separately - recommended order:
-1. [Python, supporting libraries, jupyter notebook / spyder](https://github.com/ahgraber/ml_setup/blob/master/python.md)
-2. [R, supporting packages, RStudio](https://github.com/ahgraber/ml_setup/blob/master/r.md)
-3. [Other - Optimized linear algebra libraries, etc](https://github.com/ahgraber/ml_setup/blob/master/other.md)
-4. [Octave/Matlab](https://github.com/ahgraber/ml_setup/blob/master/octave.md)
+1. Optional - [Optimized linear algebra libraries, etc](https://github.com/ahgraber/ml_setup/blob/master/other.md)
+2. [Python, supporting libraries, jupyter notebook / spyder](https://github.com/ahgraber/ml_setup/blob/master/python.md)
+3. [R, supporting packages, RStudio](https://github.com/ahgraber/ml_setup/blob/master/r.md)
+4. Optional - [Octave/Matlab](https://github.com/ahgraber/ml_setup/blob/master/octave.md)
+5. [Other
