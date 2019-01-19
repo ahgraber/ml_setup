@@ -2,7 +2,7 @@
 updated 19 Jan 2019
 
 1. [Download R](https://cran.rstudio.com/banner.shtml) and install (current R version R-3.5.2)
-2. If mac, [Download xQuartz](https://www.xquartz.org/) and install
+2. If mac, [download xQuartz](https://www.xquartz.org/) and install
 3. [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download) and install (current RStudio version 1.1.463)
 4. Optional: if you have installed an optimized linear algebra implementation, ensure R knows about it
 ```
