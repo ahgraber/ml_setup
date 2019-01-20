@@ -1,4 +1,4 @@
-# for mac
+# macOS
 
 * Install [xQuartz](https://www.xquartz.org/) for X11 support 
 * Install xcode command line tools
