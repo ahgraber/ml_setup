@@ -26,7 +26,7 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
      2. Write script as follows, and save as type Application in your Applications folder
      ```
      tell application "Terminal"
-      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/jupyter-notebook; exit"
+      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/jupyter-notebook"
      end tell
      ```
      ```
