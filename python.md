@@ -48,7 +48,7 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    ```
    # cd /path/to/directory
    # python3 -m venv VIRTUALENV_NAME
-   cd ~/Python
+   cd ~/dev/Python
    python3 -m venv ml
    ```
    3. Activate your virtual environment
