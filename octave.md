@@ -50,6 +50,6 @@ pkg install -forge linear-algebra
 ```
 
 ## References
-https://wiki.octave.org/Octave_for_macOS
-https://octave-app.org/Download.html
+https://wiki.octave.org/Octave_for_macOS (see troubleshooting tips at bottom)  
+https://octave-app.org/Download.html  
 https://github.com/octave-app
