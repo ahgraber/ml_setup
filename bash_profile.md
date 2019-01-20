@@ -44,8 +44,8 @@ nano ~/.bash_profile
 ## ALIAS
 alias ls="ls -aG"
 
-# to run tensorflow in virtualenv
-alias tensorflow="cd ~/tensorflow ;  source ./bin/activate"
+# python virtualenv
+# alias python_VENV_NAME="cd ~/path/to/VENV_NAME ;  source ./bin/activate"
 
 # to run jupyter notebook
 alias jupyter="ulimit -n 4096 && jupyter notebook"
