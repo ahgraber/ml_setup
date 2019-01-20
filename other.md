@@ -17,3 +17,12 @@ xcode-select --install.
    brew install ghostscript  
    ```
 * [Symbolic links](http://osxdaily.com/2015/08/06/make-symbolic-links-command-line-mac-os-x/)
+```
+# to create
+ln -s /path/to/original/ /path/to/link
+
+# to remove
+rm /path/to/symlink
+# or
+unlink /path/to/symlink
+```
