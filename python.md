@@ -23,12 +23,12 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
      2. Write script as follows, and save as type Application in your Applications folder
      ```
      tell application "Terminal"
-      do script "/path/to/jupyter-notebook; exit"
+      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/jupyter-notebook; exit"
      end tell
      ```
      ```
      tell application "Terminal"
-      do script "/path/to/spyder3; exit"
+      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/spyder3; exit"
      end tell
      ```
      3. Download the app icon
@@ -70,9 +70,9 @@ pip3 install ipykernel
 ipython kernel install --user --name=VIRTUALENV_NAME
 ```
 **Jupyter**: Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
-![jupyter-dropdown](images/jupyter-dropdown.png)
+![jupyter-dropdown](images/jupyter-dropdown.png)  
 **Spyder**: Open spyder, open preferences, change the interpreter manually to the path of your virtual environment
-![spyder-venv](images/spyder-venv.png)
+![spyder-venv](images/spyder-venv.png)  
 ```
 # /path/to/virtualenv
 /Users/USER_NAME/Python/VIRTUALENV_NAME/bin/python
@@ -103,6 +103,7 @@ pip3 install prophet        # forecasting with multiple seasonality
 pip3 install keras          # for prototyping tensorflow
 pip3 install tensorflow     # tensorflow!
 pip3 install plaidml        # for non-Nvidia GPU acceleration
+pip3 install plaidml-keras  # for non-Nvidia GPU acceleration
 
 # web scraping
 pip3 install beautifulsoup  # for web scraping
@@ -114,4 +115,5 @@ pip3 install spaCy          # fast nlp
 pip3 install gensim         # topic modeling
 ```
 
+## Tensorflow Setup
 6. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7)
