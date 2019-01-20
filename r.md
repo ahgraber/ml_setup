@@ -62,6 +62,7 @@ install.packages('parallel')    # parallelization
 install.packages('reticulate')  # python in R
 install.packages('feather')     # binary data structure that can be ready by both python and R
 install.packages('tensorflow')  # frontend for tensorflow
+install.packages('tfestimators')# for tensorflow
 install.packages('keras')       # frontend for keras
 
 # for package development
