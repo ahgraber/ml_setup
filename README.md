@@ -10,8 +10,9 @@ last updated Jan 2019
 
 ### Documented Separately - recommended order:
 1. Optional - [Optimized linear algebra libraries, etc](optimized.md)
-2. [Python, supporting libraries, jupyter notebook / spyder](python.md)
-3. [R, supporting packages, RStudio](r.md)
-4. Optional - [.bash_profile for mac](bash_profile.md)
-5. Optional - [Octave/Matlab](octave.md)
-6. Optional - [Other](other.md)
+2. [Other random support](other.md)
+3. [Python, supporting libraries, jupyter notebook / spyder](python.md)
+4. [R, supporting packages, RStudio](r.md)
+5. Optional - [.bash_profile for mac](bash_profile.md)
+6. Optional - [Octave/Matlab](octave.md)
+
