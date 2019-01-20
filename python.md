@@ -105,7 +105,7 @@ pip3 install prophet        # forecasting with multiple seasonality
 
 # for tensorflow
 pip3 install keras          # for prototyping tensorflow
-pip3 install tensorflow     # tensorflow!
+pip3 install tensorflow     # tensorflow (needs to be v 1.10.0 for plaidml)
 pip3 install plaidml-keras  # for non-Nvidia GPU acceleration
 pip3 install plaidbench     # benchmarking plaidml
 
