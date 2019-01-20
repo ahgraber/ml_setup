@@ -2,8 +2,7 @@
 updated 19 Jan 2019
 
 1. Decide whether to use vanilla R or an optimized version:  
-If you are doing a lot of ML work, it may be worth using linear algebra libraries that have been optimized for the instructionset supported by your processor(s).  In this case, you may have to edit your Python/R installations as well as update evironmental variables on your OS to point to the optimized libraries.  
-
+If you are doing a lot of ML work, it may be worth using linear algebra libraries that have been [optimized for the instruction set supported by your processor(s)](optimized.md).  In this case, you may have to edit your Python/R installations as well as update evironmental variables on your OS to point to the optimized libraries .  
 In fact, while you can hack it yourself by downloading some optimized BLAS packages and enabling multithreaded performance, [Microsoft(!)](https://mran.microsoft.com/documents/rro/multithread) has done all of the hard lifting for you!  
 
 2. Download R (pick a version)  
