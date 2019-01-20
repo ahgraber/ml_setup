@@ -3,8 +3,14 @@ updated 19 Jan 2019
 
 I recommend using vanilla python instead of the conda distro so you have control over the packages and ecosystem you decide to implement.
 
-1. [Download Python](https://www.python.org/downloads/) and install (current Python version 3.7.x, however if you decide to use TensorFlow and don't want to jump through a lot of hoops, install Python 3.6.x)
-2. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md)
+1. Decide whether to use vanilla Python or an optimized version:
+If you are doing a lot of ML work, it may be worth using linear algebra libraries that have been optimized for the instruction set supported by your processor(s). In this case, you may have to edit your Python/R installations as well as update evironmental variables on your OS to point to the optimized libraries .
+In fact, while you can hack it yourself by downloading some optimized BLAS packages and enabling multithreaded performance, Intel has done all of the hard lifting for you!
+   * [Vanilla Python](https://www.python.org/downloads/) (current Python version 3.7.x, however if you decide to use TensorFlow and don't want to jump through a lot of hoops, install Python 3.6.x)
+      * we can use optimized libraries by installing [intel versions of scipy and numpy](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)
+   * [Intel Optimized Python](https://software.intel.com/en-us/distribution-for-python) (current Python version 3.6.x)
+Note, while the most recent vanilla python version is 3.7.x, this is incompatible with tensorflow, so I'd recommend using 3.6.x regardless.
+3. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md)
 4. Optional: if you have installed an optimized linear algebra implementation, ensure Python knows about it
 ```
 ```
@@ -50,7 +56,7 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    3. Activate your virtual environment
    ```
    # source /path/to/virtualenv_name/bin/activate
-   source ml/bin/activate
+   source VIRTUALENV_NAME/bin/activate
    ```
    4. To exit the virtual environment
    ```
@@ -82,16 +88,16 @@ Then right-click on the console and restart the kernel
 6. Install (applicable) packages 
 ```
 # standard packages
-pip3 install numpy          # arrays/matrices
+pip3 install intel-numpy    # arrays/matrices
 pip3 install pandas         # data frames
-pip3 install scipy          # standard
+pip3 install intel-scipy    # standard
 pip3 install sympy          # symbolic math
 pip3 install matplotlib     # visualization
 pip3 install seaborn        # visualization
 
 # machine learning models
 pip3 install statsmodels    # statistical modeling
-pip3 install scikit-learn   # machine learning
+pip3 install intel-scikit-learn   # machine learning
 pip3 install sklearn        # machine learning
 pip3 install xgboost        # xgboost
 
