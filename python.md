@@ -21,7 +21,7 @@ pip3 install PyQt5          # for spyder
 pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs.spyder-ide.org/installation.html#installing-with-pip-experts-only
 ```
    * #### See .bash_profile for aliases and paths for easy launching of jupyter notebooks, etc.
-   * #### Create App Launchers (macOS): To launch Spyder or Jupyter Notebooks from an app icon:
+   * #### Create App Launchers (macOS) - you'll have to redo this for ever version update (i.e., 3.6 --> 3.7): To launch Spyder or Jupyter Notebooks from an app icon:
      1. Open Applescript Editor
      2. Write script as follows, and save as type Application in your Applications folder
      ```
