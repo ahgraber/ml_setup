@@ -10,7 +10,7 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
       * we can use optimized libraries by installing [intel versions of scipy and numpy](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)
    * [Intel Optimized Python](https://software.intel.com/en-us/distribution-for-python) (current Python version 3.6.x)
 Note, while the most recent vanilla python version is 3.7.x, this is incompatible with tensorflow, so I'd recommend using 3.6.x regardless.
-3. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))
+3. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))  
 4. Load python packages to support dev environment.  If using jupyter notebook or spyder3 on macOS, it may be a good idea to [download xQuartz](https://www.xquartz.org/) and install
 ```
 # environments
