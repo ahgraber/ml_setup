@@ -120,4 +120,5 @@ pip3 install gensim         # topic modeling
 ```
 
 ## Tensorflow Setup
-8. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7)
+8. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 
+Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup.  Arranging versions between Keras, Tensorflow, and PlaidML will likely be a headache.
