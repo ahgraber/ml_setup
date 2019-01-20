@@ -83,6 +83,7 @@ ipython kernel install --user --name=VIRTUALENV_NAME
 Then right-click on the console and restart the kernel
 
 7. Install (applicable) packages 
+Check for updated intel-optimized packages [here](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)
 ```
 # standard packages
 pip3 install intel-numpy    # arrays/matrices
