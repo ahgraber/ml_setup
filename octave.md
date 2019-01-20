@@ -37,7 +37,7 @@ Fortunately, the good folks at Octave and the community have updated the project
    ```
 
 
-
+### Post-Install
 Once Octave in installed, you may want to install packages a la Python or R:
 ```
 pkg install -forge optim
