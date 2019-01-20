@@ -69,6 +69,7 @@ install.packages('keras')       # frontend for keras
 install.packages('devtools')    # tools for packaging
 install.packages('roxygen2')    # function documentation
 install.packages('packman')     # checks for package installation/load
+install.packages('drake')       # data science pipelines
 
 # extending R
 install.packages('rJava')       # java + R
