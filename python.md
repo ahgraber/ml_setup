@@ -27,12 +27,12 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
      2. Write script as follows, and save as type Application in your Applications folder
      ```
      tell application "Terminal"
-      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/jupyter-notebook"
+      do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/jupyter-notebook"
      end tell
      ```
      ```
      tell application "Terminal"
-      do script "/Library/Frameworks/Python.framework/Versions/3.7/bin/spyder3; exit"
+      do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/spyder3; exit"
      end tell
      ```
      3. Download the app icon
