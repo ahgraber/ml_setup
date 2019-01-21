@@ -12,6 +12,7 @@ xcode-select --install.
    * Recommended homebrew casks:
    ```
    brew install wget
+   brew install ruby
    brew install gcc
    brew install cairo
    brew install ghostscript  
