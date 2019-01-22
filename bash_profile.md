@@ -1,5 +1,3 @@
-# macOS 
-
 ### setting PATH 
 ```
 nano ~/.bash_profile
@@ -42,7 +40,8 @@ nano ~/.bash_profile
 ```
 ```
 ## ALIAS
-alias ls="ls -aG"
+alias ls="ls -aG" 
+# for linux, alias ls="ls-a --color"
 
 # python virtualenv
 # alias python_VENV_NAME="cd ~/path/to/VENV_NAME ;  source ./bin/activate"
