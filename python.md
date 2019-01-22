@@ -23,24 +23,6 @@ pip3 install PyQt5          # for spyder
 pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs.spyder-ide.org/installation.html#installing-with-pip-experts-only
 ```
    * #### See .bash_profile for aliases and paths for easy launching of jupyter notebooks, etc.
-   * #### Create App Launchers (macOS) - you'll have to redo this for ever version update (i.e., 3.6 --> 3.7): To launch Spyder or Jupyter Notebooks from an app icon:
-     1. Open Applescript Editor
-     2. Write script as follows, and save as type Application in your Applications folder
-     ```
-     tell application "Terminal"
-      do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/jupyter-notebook"
-     end tell
-     ```
-     ```
-     tell application "Terminal"
-      do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/spyder3; exit"
-     end tell
-     ```
-     3. Download the app icon
-     4. Open the icon in Preview and ctrl+C to copy
-     5. Right-click on the app with the Applescript icon and select 'Get Info'
-     6. Click the icon in the top-left corner of the info panel and hit ctrl-V to paste  
-
 
 5. **BEFORE LOADING OTHER PACKAGES**, create a virtual environment for ML projects.  
 See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) for more
@@ -123,3 +105,22 @@ pip3 install gensim         # topic modeling
 ## Tensorflow Setup
 7. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 
 Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup.  Arranging versions between Keras, Tensorflow, and PlaidML will likely be a headache.
+
+### Optional - Create App Launchers (macOS) - you'll have to redo this for ever version update (i.e., 3.6 --> 3.7): To launch Spyder or Jupyter Notebooks from an app icon:
+   1. Open Applescript Editor
+   2. Write script as follows, and save as type Application in your Applications folder
+   ```
+   tell application "Terminal"
+    do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/jupyter-notebook"
+   end tell
+   ```
+   ```
+   tell application "Terminal"
+    do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/spyder3; exit"
+   end tell
+   ```
+   3. Download the app icon
+   4. Open the icon in Preview and ctrl+C to copy
+   5. Right-click on the app with the Applescript icon and select 'Get Info'
+   6. Click the icon in the top-left corner of the info panel and hit ctrl-V to paste  
+
