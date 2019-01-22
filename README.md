@@ -8,6 +8,8 @@ last updated Jan 2019
 * GPU: MSI Radeon Vega 56 Air Boost (OC'd & Undervolted)
 * Storage: 256 GB+ NVMe SSD; 2 TB HDD
 
+I've tried to document my setup for both macOS and Windows; that said, Windows is kind of hacky - you can get it to work for some things, and then you have to go around the world a different way for something else... WSL helps with this, but if you need Windows, you might try docker or dual-booting Linux.
+
 ### Documented Separately - recommended order:
 1. Optional - [Optimized linear algebra libraries, etc](optimized.md)
 2. [Other random support](other.md)
