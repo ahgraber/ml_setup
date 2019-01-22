@@ -12,8 +12,8 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
    * [Intel Optimized Python](https://software.intel.com/en-us/distribution-for-python) (current Python version 3.6.x)
 Note, while the most recent vanilla python version is 3.7.x, this is incompatible with tensorflow, so I'd recommend using 3.6.x regardless.
    * Windows note: I'd recommend installing WSL and running your entire python environment through WSL. You can start a jupyter notebooks server on the WSL side and access in using browser from Windows using `http://localhost:8888/...`. 
-3. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))  
-4. Load python packages to support dev environment.  If using jupyter notebook or spyder3 on macOS, it may be a good idea to [download xQuartz](https://www.xquartz.org/) and install
+2. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))  
+3. Load python packages to support dev environment.  If using jupyter notebook or spyder3 on macOS, it may be a good idea to [download xQuartz](https://www.xquartz.org/) and install
 ```
 # environments
 pip3 install virtualenv     # virtual environments
@@ -24,7 +24,7 @@ pip3 install spyder         # sPyder (RStudio for Python) see also: https://docs
 ```
    * #### See .bash_profile for aliases and paths for easy launching of jupyter notebooks, etc.
 
-5. **BEFORE LOADING OTHER PACKAGES**, create a virtual environment for ML projects.  
+4. **BEFORE LOADING OTHER PACKAGES**, create a virtual environment for ML projects.  
 See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https://docs.python-guide.org/dev/virtualenvs/) for more
    1. Create a folder for your ml virtual environment (or, if you plan to do this on a per-project basis, create your project folder)
    2. In terminal, create your virtual environment
@@ -59,7 +59,7 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    deactivate
    ```
 
-6. Install (applicable) packages 
+5. Install (applicable) packages 
 Check for updated intel-optimized packages [here](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)
 ```
 # Note: I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
@@ -103,7 +103,7 @@ pip3 install gensim         # topic modeling
 ```
 
 ## Tensorflow Setup
-7. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 
+6. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 
 Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup.  Arranging versions between Keras, Tensorflow, and PlaidML will likely be a headache.
 
 ### Optional - Create App Launchers (macOS) - you'll have to redo this for ever version update (i.e., 3.6 --> 3.7): To launch Spyder or Jupyter Notebooks from an app icon:
