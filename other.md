@@ -34,7 +34,7 @@ You might consider:
   * Code is a fast coding environment (a la Sublime Text)
   * IDE is an IDE - choose the dev environments it supports (my 'defaults' include .NET, C++, Python, R, and SQL bringing it to ~30GB) 
 * install Linux subsystem for Windows
-  * Open PowerShell as Administrator, then run: 
+  * Open PowerShell as Administrator, then run:  
   `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 * install [cygwin](https://www.cygwin.com/) - unix environment for Windows
 
