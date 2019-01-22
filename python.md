@@ -1,7 +1,7 @@
 # Python Setup
 updated 19 Jan 2019
 
-I recommend using vanilla python instead of the conda distro so you have control over the packages and ecosystem you decide to implement.
+I recommend using vanilla python instead of the conda distro so you have control over the packages and ecosystem you decide to implement.  Warning: some packages are only available through pip or conda, so select your distro accordingly.
 
 1. Decide whether to use vanilla Python or an optimized version:
 If you are doing a lot of ML work, it may be worth using linear algebra libraries that have been optimized for the instruction set supported by your processor(s). In this case, you may have to edit your Python/R installations as well as update evironmental variables on your OS to point to the optimized libraries .
@@ -11,6 +11,7 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
       * Vanilla Python + optimized libraries is what I use - except for with tensorflow/plaidml, where I use vanilla libraries as well
    * [Intel Optimized Python](https://software.intel.com/en-us/distribution-for-python) (current Python version 3.6.x)
 Note, while the most recent vanilla python version is 3.7.x, this is incompatible with tensorflow, so I'd recommend using 3.6.x regardless.
+   * Windows note: I'd recommend installing WSL and running your entire python environment through WSL. You can start a jupyter notebooks server on the WSL side and access in using browser from Windows using `http://localhost:8888/...`. 
 3. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))  
 4. Load python packages to support dev environment.  If using jupyter notebook or spyder3 on macOS, it may be a good idea to [download xQuartz](https://www.xquartz.org/) and install
 ```
