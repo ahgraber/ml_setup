@@ -89,6 +89,7 @@ pip3 install intel-numpy    # arrays/matrices
 pip3 install pandas         # data frames
 pip3 install intel-scipy    # standard
 pip3 install sympy          # symbolic math
+pip3 install numba          # just-in-time compilation for numpy; parallelization
 pip3 install matplotlib     # visualization
 pip3 install seaborn        # visualization
 
