@@ -27,3 +27,12 @@ rm /path/to/symlink
 # or
 unlink /path/to/symlink
 ```
+
+# Windows (note: macOS is my primary OS, so these instructions will be somewhat less detailed)
+You might consider:
+* install [Microsoft Visual Studio IDE, Code](https://visualstudio.microsoft.com/)
+  * Code is a fast coding environment (a la Sublime Text)
+  * IDE is an IDE - choose the dev environments it supports (my 'defaults' include .NET, C++, Python, R, and SQL bringing it to ~30GB) 
+* install [cygwin](https://www.cygwin.com/) - unix environment for Windows
+* install [puTTYgen](https://www.puttygen.com/) and [WinSCP](https://winscp.net/eng/index.php) - SSH and telnet
+* install [Chocolaty](https://chocolatey.org/) or [Scoop](http://scoop.sh/) - package manager for Windows
