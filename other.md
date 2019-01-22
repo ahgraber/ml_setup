@@ -50,12 +50,14 @@ You might consider:
   Ubuntu.appx
   ```
   * Set up your Linux-side user and password (this has no bearing on Windows side)
+  * Note: To access Windows-side folders & documents, go to `/mnt/c/` on WSL
   * Install supporting packages:
   ```
   sudo apt update && sudo apt upgrade
   sudo apt-get install -y build-essential gfortran
   sudo apt-get install -y zlib1g-dev liblapack-dev libatlas-base-dev libopenblas-dev libhdf5-dev libedit-dev
   sudo apt-get install -y git
+  sudo apt-get install -y jupyter
   ```
   * If you're not happy with the vanilla Linux terminal, you can try installing a [Linux terminal emulator](https://blog.ropnop.com/configuring-a-pretty-and-usable-terminal-emulator-for-wsl/).  See link for config hints
   ```
