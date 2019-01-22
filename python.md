@@ -120,7 +120,7 @@ Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup.  Arra
    end tell
    ```
    3. Download the app icon
-   4. Open the icon in Preview and ctrl+C to copy
+   4. Open the icon in Preview and copy
    5. Right-click on the app with the Applescript icon and select 'Get Info'
-   6. Click the icon in the top-left corner of the info panel and hit ctrl-V to paste  
+   6. Click the icon in the top-left corner of the info panel and paste  
 
