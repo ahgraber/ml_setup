@@ -1,12 +1,12 @@
 # macOS
 
 * Install [xQuartz](https://www.xquartz.org/) for X11 support 
-* Install xcode command line tools
-```
+* Install xcode command line tools  
+``` . 
 xcode-select --install.
-```
-* Install [Homebrew](https://brew.sh/)
-```
+```  
+* Install [Homebrew](https://brew.sh/)   
+```  
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
    * Recommended homebrew casks:
@@ -18,7 +18,7 @@ xcode-select --install.
    brew install ghostscript  
    ```
 * [Symbolic links](http://osxdaily.com/2015/08/06/make-symbolic-links-command-line-mac-os-x/)  
-```
+```  
 # to create
 ln -s /path/to/original/ /path/to/link
 
@@ -26,7 +26,7 @@ ln -s /path/to/original/ /path/to/link
 rm /path/to/symlink
 # or
 unlink /path/to/symlink
-```
+```  
 
 # Windows (note: macOS is my primary OS, so these instructions will be somewhat less detailed)
 You might consider:
