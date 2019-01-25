@@ -24,6 +24,7 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
 
 # standard
 install.packages('tidyverse')   # standard package for data wrangling and manipulation
+install.packages('janitor')     # tools for cleaning/examining dirty data
 install.packages('glue')        # evaluates variables and R expressions within {var or expression}
 install.packages('ggplot2')     # for visualizations
 install.packages('data.table')  # for fast dataframes
