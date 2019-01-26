@@ -48,3 +48,5 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   docker run -v /host/directory:/container/directory -e PASSWORD=<new_password> -p 8787:8787 <image_name>
   ```
 6. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
+
+Now you can create a new container for each project, customized to the project, and you can share the R environment with anyone else you're working with to ensure reproducability!
