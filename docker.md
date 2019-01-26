@@ -14,7 +14,8 @@ TL;DR - Docker Images are blueprints to build a Docker container - "An image con
 4. We *could* create docker images from scratch, but fortunately there's a pretty large community we can use as a base:
 
 ### R Docker Image
-We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidyverse) as a base.  This contains the tidyverse packages and a few others (like devtools).  If we are working on a project that requires glmnet, we'd have to install glmnet every time we create an instance of the tidyverse package.  Alternatively, we could build a new package that lists glmnet in the source.
+See also: [https://ropenscilabs.github.io/r-docker-tutorial/](https://ropenscilabs.github.io/r-docker-tutorial/)
+We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidyverse) as a base.  This contains the tidyverse packages and a few others (like devtools).  If we are working on a project that requires glmnet (or whatever other package(s)), we'd have to install glmnet every time we create an instance of the tidyverse package.  Alternatively, we could build a new package that lists glmnet in the source.
 
 1. Create a Dockerfile that initializes based on the rocker/tidyverse image and adds the R libraries we need
   ```
@@ -27,3 +28,23 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   RUN install2.r --error \
   janitor data.table
   ```
+2. In the terminal, navigate to the location where you saved the dockerfile. Run:
+  ```
+  docker build --tag=<image_name> .
+  ```
+  where the <image_name> is your name for the image, and the . implies the source files are in the current directory
+3. After it builds (hopefully successfully), you can view the image in your list by running
+  ```
+  docker image ls
+  ```
+  and instantialize the image to create a container by running
+  ```
+  docker run -e PASSWORD=<new_password> -p 8787:8787 <image_name>
+  ```
+  where the <new_password> is your new password to access RStudio server and <image_name> is what you named the image
+4. To use the container, open http://localhost:8787 in your browser and log in with username: rstudio password:<new_password>
+5. If you need to get files back and forth to RStudio, you can mount a local volume to the docker image:
+  ```
+  docker run -v /host/directory:/container/directory -e PASSWORD=<new_password> -p 8787:8787 <image_name>
+  ```
+6. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
