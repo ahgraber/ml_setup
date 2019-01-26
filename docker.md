@@ -11,5 +11,19 @@ TL;DR - Docker Images are blueprints to build a Docker container - "An image con
 2. Optional: Install Kitematic (GUI for Docker) [macOS](https://download.docker.com/kitematic/Kitematic-Mac.zip)/[Windows](https://download.docker.com/kitematic/Kitematic-Windows.zip) (or, if you don't trust those links, install Docker Desktop and look for a link to Kitematic from the Desktop app).
 3. Make sure you've installed it - in terminal, run:
    * `docker --version`
-4. We *could* create docker images from scratch, but fortunately there's a pretty large community we can use as a base.
-   
+4. We *could* create docker images from scratch, but fortunately there's a pretty large community we can use as a base:
+
+### R Docker Image
+We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidyverse) as a base.  This contains the tidyverse packages and a few others (like devtools).  If we are working on a project that requires glmnet, we'd have to install glmnet every time we create an instance of the tidyverse package.  Alternatively, we could build a new package that lists glmnet in the source.
+
+1. Create a Dockerfile that initializes based on the rocker/tidyverse image and adds the R libraries we need
+  ```
+  # Create image on back of rocker/tidyverse using R version 3.5.2
+  FROM rocker/tidyverse:3.5.2
+
+  LABEL MAINTAINER="Alex Graber <ahgraber@gmail.com>"
+
+  # Install any needed packages specified
+  RUN install2.r --error \
+  janitor data.table
+  ```
