@@ -11,5 +11,5 @@ TL;DR - Docker Images are blueprints to build a Docker container - "An image con
 2. Optional: Install Kitematic (GUI for Docker) [macOS](https://download.docker.com/kitematic/Kitematic-Mac.zip)/[Windows](https://download.docker.com/kitematic/Kitematic-Windows.zip) (or, if you don't trust those links, install Docker Desktop and look for a link to Kitematic from the Desktop app).
 3. Make sure you've installed it - in terminal, run:
    * `docker --version`
-   * `docker run hello-world`
+4. We *could* create docker images from scratch, but fortunately there's a pretty large community we can use as a base.
    
