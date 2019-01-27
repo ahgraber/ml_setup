@@ -39,14 +39,15 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   ```
   and instantialize the image to create a container by running
   ```
-  docker run -e PASSWORD=<new_password> -p 8787:8787 <image_name>
+  docker run -e PASSWORD=<new_password> -p 8787:8787 -v </host/path/to/data>:/kitematic <image_name> --name <instance_name>
   ```
-  where the <new_password> is your new password to access RStudio server and <image_name> is what you named the image
+  where:
+  * <new_password> is your new password to access RStudio server 
+  * <host/path/to/data> is where your local data is stored (i.e., Users/USERNAME/Documents/Project/Data)
+  * <image_name> is what you named the image
+  * <instance_name> is a unique identifier to restart the specific instance
 4. To use the container, open http://localhost:8787 in your browser and log in with username: rstudio password:<new_password>
-5. If you need to get files back and forth to RStudio, you can mount a local volume to the docker image:
-  ```
-  docker run -v /host/directory:/container/directory -e PASSWORD=<new_password> -p 8787:8787 <image_name>
-  ```
+5. To restart the instance, `docker start -ia <instance_name>`
 6. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
 
 Now you can create a new container for each project, customized to the project, and you can share the R environment with anyone else you're working with to ensure reproducability!
