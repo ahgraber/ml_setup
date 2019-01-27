@@ -32,7 +32,12 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   ```
   docker build --tag=<image_name> .
   ```
-  where the <image_name> is your name for the image, and the . implies the source files are in the current directory
+  where the <image_name> is your name for the image, and the . implies the source files are in the current directory.
+  If you built the image elsewhere, you can load it to your current machine with
+  ```
+  docker login
+  docker pull username/repository
+  ```
 3. After it builds (hopefully successfully), you can view the image in your list by running
   ```
   docker image ls
