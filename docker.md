@@ -39,7 +39,7 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   ```
   and instantialize the image to create a container by running
   ```
-  docker run -e PASSWORD=<new_password> -p 8787:8787 -v </host/path/to/data>:/kitematic <image_name> --name <instance_name>
+  docker run -e PASSWORD=<new_password> -p 8787:8787 -v </host/path/to/data>:/kitematic <image_name> -name <instance_name>
   ```
   where:
   * <new_password> is your new password to access RStudio server 
