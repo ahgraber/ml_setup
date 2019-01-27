@@ -47,7 +47,15 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   * <image_name> is what you named the image
   * <instance_name> is a unique identifier to restart the specific instance
 4. To use the container, open http://localhost:8787 in your browser and log in with username: rstudio password:<new_password>
-5. To restart the instance, `docker start -ia <instance_name>`
-6. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
+5. If you make changes to the container that you want to preserve (i.e., if you install additional packages in RStudio), you can tag it as a new image 
+```
+docker tag image username/repository:tag
+```
+and then push to your repo
+```
+docker push username/repository:tag
+```
+6. To restart the instance, `docker start -ia <instance_name>`
+7. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
 
 Now you can create a new container for each project, customized to the project, and you can share the R environment with anyone else you're working with to ensure reproducability!
