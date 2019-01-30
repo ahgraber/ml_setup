@@ -46,9 +46,9 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    ipython kernel install --user --name=VIRTUALENV_NAME
    ```
    **Jupyter**: Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
-   ![jupyter-dropdown](images/jupyter-dropdown.png)  
+   ![jupyter-dropdown](/assets/jupyter-dropdown.png)  
    **Spyder**: Open spyder, open preferences, change the interpreter manually to the path of your virtual environment
-   ![spyder-venv](images/spyder-venv.png)  
+   ![spyder-venv](/assets/spyder-venv.png)  
    ```
    # /path/to/virtualenv
    /Users/USER_NAME/Python/VIRTUALENV_NAME/bin/python
