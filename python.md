@@ -66,6 +66,7 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
 
 5. Install (applicable) packages 
 Check for updated intel-optimized packages [here](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)  
+
 ```
 # Note: I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
 
@@ -105,7 +106,7 @@ pip3 install ntlk           # natural language toolkit
 pip3 install textblob       # interface for ntlk
 pip3 install spaCy          # fast nlp
 pip3 install gensim         # topic modeling
-```  
+```
 
 ## Tensorflow Setup
 6. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 

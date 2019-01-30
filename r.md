@@ -24,7 +24,8 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
 2. If mac, [download xQuartz](https://www.xquartz.org/) and install
 3. [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download) and install (current RStudio version 1.1.463)
 4. Install Packages in RStudio:  
-```  
+
+```
 # see also: https://awesome-r.com/
 
 # standard
