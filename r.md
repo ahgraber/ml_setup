@@ -82,10 +82,10 @@ install.packages('rJava')       # java + R
 ```  
 
 ## References
-* http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/
-* https://software.intel.com/en-us/articles/quick-linking-intel-mkl-blas-lapack-to-r
-* https://software.intel.com/en-us/mkl
-* https://cran.r-project.org/doc/manuals/r-release/R-admin.html#MKL
-* https://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64/
-* https://brettklamer.com/diversions/statistical/faster-blas-in-r/
-* https://gist.github.com/nicebread/6920c8287d7bffb03007
+* [http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/](http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/)
+* [https://software.intel.com/en-us/articles/quick-linking-intel-mkl-blas-lapack-to-r](https://software.intel.com/en-us/articles/quick-linking-intel-mkl-blas-lapack-to-r)
+* [https://software.intel.com/en-us/mkl](https://software.intel.com/en-us/mkl)
+* [https://cran.r-project.org/doc/manuals/r-release/R-admin.html#MKL](https://cran.r-project.org/doc/manuals/r-release/R-admin.html#MKL)
+* [https://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64/](https://www.r-bloggers.com/an-openblas-based-rblas-for-windows-64/)
+* [https://brettklamer.com/diversions/statistical/faster-blas-in-r/](https://brettklamer.com/diversions/statistical/faster-blas-in-r/)
+* [https://gist.github.com/nicebread/6920c8287d7bffb03007](https://gist.github.com/nicebread/6920c8287d7bffb03007)
