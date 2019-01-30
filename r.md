@@ -12,19 +12,19 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
 
 2. Download R (pick a version)  
    * [Vanilla R](https://cran.rstudio.com/banner.shtml) and install (current R version R-3.5.2)
-      * On macOS, you can [use the veclib from the Accelerate framework](https://gist.github.com/nicebread/6920c8287d7bffb03007)
+      * On macOS, you can [use the veclib from the Accelerate framework](https://gist.github.com/nicebread/6920c8287d7bffb03007)  
       ```
       # use faster vecLib library
       cd /Library/Frameworks/R.framework/Resources/lib
       ln -sf  /System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Versions/Current/libBLAS.dylib libRblas.dylib
-      ```
+      ```  
    * [Microsoft Optimized R](https://mran.microsoft.com/download) and install(current R version R-3.5.1)  
       * If running an Intel CPU, [download Intel's MKL (Math Kernel Library)](https://software.intel.com/en-us/mkl) - especially if on Windows (the Microsoft R will use Apple's math libraries if MLK is not present)
 
 2. If mac, [download xQuartz](https://www.xquartz.org/) and install
 3. [Download RStudio](https://www.rstudio.com/products/rstudio/download/#download) and install (current RStudio version 1.1.463)
-4. Install Packages in RStudio:
-```
+4. Install Packages in RStudio:  
+```  
 # see also: https://awesome-r.com/
 
 # standard
@@ -79,7 +79,7 @@ install.packages('drake')       # data science pipelines
 
 # extending R
 install.packages('rJava')       # java + R
-```
+```  
 
 ## References
 * http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/

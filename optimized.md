@@ -16,6 +16,6 @@ If you are doing a lot of ML work, it may be worth using linear algebra librarie
   * `<Program Files>\IntelSWTools\compilers_and_libraries_<version>`
 
 ## References
-* http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/
+* [http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/](http://blog.nguyenvq.com/blog/2014/11/10/optimized-r-and-python-standard-blas-vs-atlas-vs-openblas-vs-mkl/)
 
 

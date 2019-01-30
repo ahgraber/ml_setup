@@ -16,7 +16,7 @@ In fact, while you can hack it yourself by downloading some optimized BLAS packa
       * Vanilla Python + optimized libraries is what I use - except for with tensorflow/plaidml, where I use vanilla libraries as well
    * [Intel Optimized Python](https://software.intel.com/en-us/distribution-for-python) (current Python version 3.6.x)
 Note, while the most recent vanilla python version is 3.7.x, this is incompatible with tensorflow, so I'd recommend using 3.6.x regardless.
-   * Windows note: I'd recommend installing WSL and running your entire python environment through WSL. You can start a jupyter notebooks server on the WSL side and access in using browser from Windows using `http://localhost:8888/...`. 
+   * Windows note: I'd recommend installing WSL and running your entire python environment through WSL. You can start a jupyter notebooks server on the WSL side and access in using browser from Windows using `http://localhost:8888/...` 
 2. Ensure PATH is correct (see [.bash_profile](https://github.com/ahgraber/ml_setup/edit/master/bash_profile.md))  
 3. Load python packages to support dev environment.  If using jupyter notebook or spyder3 on macOS, it may be a good idea to [download xQuartz](https://www.xquartz.org/) and install
 ```
@@ -65,7 +65,7 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
    ```
 
 5. Install (applicable) packages 
-Check for updated intel-optimized packages [here](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)
+Check for updated intel-optimized packages [here](https://software.intel.com/en-us/articles/installing-the-intel-distribution-for-python-and-intel-performance-libraries-with-pip-and)  
 ```
 # Note: I have python 2.7 and 3.7 installed, so pip3 installs for my python3 installation
 
@@ -105,7 +105,7 @@ pip3 install ntlk           # natural language toolkit
 pip3 install textblob       # interface for ntlk
 pip3 install spaCy          # fast nlp
 pip3 install gensim         # topic modeling
-```
+```  
 
 ## Tensorflow Setup
 6. Unfortunately, as of Jan 2019, the most recent tensorflow (1.12) does not work with the latest release of python (3.7) . 
@@ -113,17 +113,17 @@ Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup.  Arra
 
 ### Optional - Create App Launchers (macOS) - you'll have to redo this for ever version update (i.e., 3.6 --> 3.7): To launch Spyder or Jupyter Notebooks from an app icon:
    1. Open Applescript Editor
-   2. Write script as follows, and save as type Application in your Applications folder
+   2. Write script as follows, and save as type Application in your Applications folder  
    ```
    tell application "Terminal"
     do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/jupyter-notebook"
    end tell
-   ```
-   ```
+   ```  
+   ```  
    tell application "Terminal"
     do script "/Library/Frameworks/Python.framework/Versions/3.6/bin/spyder3; exit"
    end tell
-   ```
+   ```  
    3. Download the app icon
    4. Open the icon in Preview and copy
    5. Right-click on the app with the Applescript icon and select 'Get Info'
