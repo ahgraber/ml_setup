@@ -1,4 +1,9 @@
-# R Setup
+---
+layout: page
+title: R Setup
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
 updated 19 Jan 2019
 
 1. Decide whether to use vanilla R or an optimized version:  

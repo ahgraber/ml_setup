@@ -1,4 +1,9 @@
-# Installing Octave + GUI
+---
+layout: page
+title: Installing Octave+GUI - Optional
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
 updated 19 Jan 2019
 
 If you've taken (or plan to take) [Andrew Ng's Machine Learning course on Coursera](https://www.coursera.org/learn/machine-learning/), you will need Octave to complete the assignments.

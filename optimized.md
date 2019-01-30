@@ -1,4 +1,9 @@
-# Optional - Optimized Linear Algebra Packages
+---
+layout: page
+title: Optimized Linear Algebra libraries
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
 updated 19 Jan 2019
 
 If you are doing a lot of ML work, it may be worth using linear algebra libraries that have been optimized for the instructionset supported by your processor(s).  In this case, you may have to edit your Python/R installations as well as update evironmental variables on your OS to point to the optimized libraries. 

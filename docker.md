@@ -1,4 +1,9 @@
-# Docker setup
+---
+layout: page
+title: Docker Setup - Optional
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
 
 Alternatively, if you don't want to spend the time to meticulously read through & follow these instructions to set up your computer, worry about versioning conflicts, you can use Docker to obtain mini-environments that are based on the instructions here. 
 

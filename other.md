@@ -1,3 +1,10 @@
+---
+layout: page
+title: Other Environmental Setup
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
+
 # macOS
 
 * Install [xQuartz](https://www.xquartz.org/) for X11 support 

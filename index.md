@@ -1,5 +1,10 @@
-# ml_setup
-#### documenting initial setup/installs for ML projects
+---
+layout: page
+title: Data Science Setup
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
+
 last updated Jan 2019
 
 ### Current hardware:
@@ -17,4 +22,5 @@ I've tried to document my setup for both macOS and Windows; that said, Windows i
 4. [R, supporting packages, RStudio](r.md)
 5. Optional - [.bash_profile for mac](bash_profile.md)
 6. Optional - [Octave/Matlab](octave.md)
+7. Optional - [Docker](docker.md)
 

@@ -1,4 +1,9 @@
-# Python Setup
+---
+layout: page
+title: Python Setup
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
 updated 19 Jan 2019
 
 I recommend using vanilla python instead of the conda distro so you have control over the packages and ecosystem you decide to implement.  Warning: some packages are only available through pip or conda, so select your distro accordingly.

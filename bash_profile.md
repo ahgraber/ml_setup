@@ -1,3 +1,10 @@
+---
+layout: page
+title: Bash Profile (unix environments) - Optional
+tagline: Documenting initial setup/installs for DataSci/ML projects
+description:
+---
+
 ### setting PATH 
 ```
 nano ~/.bash_profile
