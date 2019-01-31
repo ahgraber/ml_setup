@@ -23,6 +23,7 @@ See also: [https://ropenscilabs.github.io/r-docker-tutorial/](https://ropenscila
 We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidyverse) as a base.  This contains the tidyverse packages and a few others (like devtools).  If we are working on a project that requires glmnet (or whatever other package(s)), we'd have to install glmnet every time we create an instance of the tidyverse package.  Alternatively, we could build a new package that lists glmnet in the source.
 
 1. Create a Dockerfile that initializes based on the rocker/tidyverse image and adds the R libraries we need
+
   ```
   # Create image on back of rocker/tidyverse using R version 3.5.2
   FROM rocker/tidyverse:3.5.2
@@ -33,24 +34,33 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   RUN install2.r --error \
   janitor data.table
   ```
+  
 2. In the terminal, navigate to the location where you saved the dockerfile. Run:
+
   ```
   docker build --tag=<image_name> .
   ```
+  
   where the <image_name> is your name for the image, and the . implies the source files are in the current directory.
   If you built the image elsewhere, you can load it to your current machine with
+  
   ```
   docker login
   docker pull username/repository
   ```
+  
 3. After it builds (hopefully successfully), you can view the image in your list by running
+
   ```
   docker image ls
   ```
+  
   and instantialize the image to create a container by running
+  
   ```
   docker run -e PASSWORD=<new_password> -p 8787:8787 -v </host/path/to/data>:/home/rstudio/kitematic --name <instance_name> <image_name>
   ```
+  
   where:
   * <new_password> is your new password to access RStudio server 
   * <host/path/to/data> is where your local data is stored (i.e., Users/USERNAME/Documents/Project/Data)
@@ -58,13 +68,17 @@ We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidy
   * <instance_name> is a unique identifier to restart the specific instance
 4. To use the container, open http://localhost:8787 in your browser and log in with username: rstudio password:<new_password>
 5. If you make changes to the container that you want to preserve (i.e., if you install additional packages in RStudio), you can tag it as a new image 
+
 ```
 docker tag image username/repository:tag
 ```
+
 and then push to your repo
+
 ```
 docker push username/repository:tag
 ```
+
 6. To restart the instance, `docker start -ia <instance_name>`
 7. Bonus optional: if you will use this docker image frequently, create an alias for it in .bash_profile!
 
