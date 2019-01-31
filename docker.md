@@ -20,6 +20,7 @@ TL;DR - Docker Images are blueprints to build a Docker container - "An image con
 
 ### R Docker Image
 See also: [https://ropenscilabs.github.io/r-docker-tutorial/](https://ropenscilabs.github.io/r-docker-tutorial/) and [https://www.andrewheiss.com/blog/2017/04/27/super-basic-practical-guide-to-docker-and-rstudio/](https://www.andrewheiss.com/blog/2017/04/27/super-basic-practical-guide-to-docker-and-rstudio/)
+
 We'll use the [tidyverse image from rocker](https://hub.docker.com/r/rocker/tidyverse) as a base.  This contains the tidyverse packages and a few others (like devtools).  If we are working on a project that requires glmnet (or whatever other package(s)), we'd have to install glmnet every time we create an instance of the tidyverse package.  Alternatively, we could build a new package that lists glmnet in the source.
 
 1. Create a Dockerfile that initializes based on the rocker/tidyverse image and adds the R libraries we need
