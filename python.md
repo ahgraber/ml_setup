@@ -116,7 +116,7 @@ conda install matplotlib     # visualization
 conda install seaborn        # visualization
 
 # machine learning models
-conda install sklearn        # machine learning
+conda install scikit-learn        # machine learning
 conda install statsmodels    # statistical modeling
 conda install xgboost        # xgboost
 
