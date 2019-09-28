@@ -125,13 +125,13 @@ conda install tslearn        # time series
 conda install prophet        # forecasting with multiple seasonality
 
 # web scraping
-conda install beautifulsoup  # for web scraping
+conda install beautifulsoup4 # for web scraping
 
 # for nlp
 conda install ntlk           # natural language toolkit
 conda install textblob       # interface for ntlk
 conda install spaCy          # fast nlp
-conda install gensim         # topic modeling
+conda install gensim         # topic modeling (may also want to install pattern https://www.clips.uantwerpen.be/pattern
 
 # for tensorflow
 conda install keras          # for prototyping tensorflow
