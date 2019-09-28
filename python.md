@@ -116,7 +116,7 @@ conda install matplotlib     # visualization
 conda install seaborn        # visualization
 
 # machine learning models
-conda install scikit-learn        # machine learning
+conda install scikit-learn   # machine learning
 conda install statsmodels    # statistical modeling
 conda install xgboost        # xgboost
 
@@ -128,10 +128,11 @@ conda install prophet        # forecasting with multiple seasonality
 conda install beautifulsoup4 # for web scraping
 
 # for nlp
-conda install ntlk           # natural language toolkit
+conda install nltk           # natural language toolkit
 conda install textblob       # interface for ntlk
 conda install spaCy          # fast nlp
-conda install gensim         # topic modeling (may also want to install pattern https://www.clips.uantwerpen.be/pattern
+conda install gensim         # topic modeling
+conda install pattern        # parsing
 
 # for tensorflow
 conda install keras          # for prototyping tensorflow
@@ -170,10 +171,11 @@ pip3 install prophet        # forecasting with multiple seasonality
 pip3 install beautifulsoup  # for web scraping
 
 # for nlp
-pip3 install ntlk           # natural language toolkit
+pip3 install nltk           # natural language toolkit
 pip3 install textblob       # interface for ntlk
 pip3 install spaCy          # fast nlp
 pip3 install gensim         # topic modeling
+pip3 install pattern        # parsing
 
 # for tensorflow
 pip3 install keras          # for prototyping tensorflow
