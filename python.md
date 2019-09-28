@@ -100,8 +100,11 @@ See [venv](https://docs.python.org/3/library/venv.html) and [virtualenv](https:/
 5. Install (applicable) packages 
 **CONDA**
 ```
- Activate virtual environment
+# Activate virtual environment
 conda activate /path/to/VIRTUALENV_NAME
+
+# if Intel processor, look for intel-optimized packages first
+conda config --add channels intel
 
 # standard packages
 conda install numpy          # arrays/matrices
