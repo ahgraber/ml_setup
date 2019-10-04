@@ -52,6 +52,10 @@ See [conda environments](https://docs.conda.io/projects/conda/en/latest/user-gui
    conda install ipykernel
    ipython kernel install --user --name=VIRTUALENV_NAME
    ```
+   
+   6. Optionally, create your environments from environment.yml files
+     * ```conda env create --name <name> --file <path/to/environment.yml>```
+     * For cross-platform compatibility, you can create the environment.yml with ```conda env export > environment.yml --no-builds```
    **Jupyter**: Now you can start jupyter, create a new notebook and select the appropriate kernel from the drop-down.
    ![jupyter-dropdown](/assets/jupyter-dropdown.png)  
    ```
@@ -187,4 +191,3 @@ pip3 install plaidbench     # benchmarking plaidml
 ## Tensorflow Setup
 6. When last checked (Jan 2019), the most recent tensorflow (1.12) does not work with the latest release of python (3.7).  Uncertain of current state (Sept 2019). 
 Follow [this guide](https://github.com/plaidml/plaidml) for plaidml setup for Radeon GPU support.  Arranging versions between Keras, Tensorflow, and PlaidML will likely be a headache.
-
